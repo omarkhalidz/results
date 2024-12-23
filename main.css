@@ -1,0 +1,233 @@
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hanken Grotesk", serif;
+  padding: 0;
+  margin: 0;
+}
+.page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  max-width: 779px;
+  max-height: 557px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 25px;
+  box-shadow: 15px 15px 32px 1px hsl(241, 100%, 97%);
+}
+.one {
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+  border-radius: 25px;
+  padding: 50px;
+}
+.one > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(241, 100%, 89%);
+  font-size: 25px;
+  font-weight: bold;
+  margin: -10px 25px 35px;
+}
+.one .circle {
+  padding: 50px;
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to top,
+    hsla(241, 72%, 46%, 0),
+    hsla(256, 72%, 46%, 1)
+  );
+  margin: 0 auto;
+}
+.one .circle .txt p {
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  margin: 0 0 6px;
+}
+.one .circle .txt span {
+  color: hsl(241, 100%, 80%);
+  font-weight: bold;
+  font-size: 18px;
+  size: 18px;
+}
+
+.one .text h3 {
+  color: white;
+  font-size: 35px;
+  margin: 35px 0 20px;
+}
+.one .text p {
+  color: hsl(241, 100%, 89%);
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.two {
+  padding: 50px;
+  width: 50%;
+  height: 100%;
+  border-radius: 0 25px 25px 0;
+}
+.two h3 {
+  margin: -23px 0 40px;
+  font-size: 25px;
+}
+.two ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.two ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin-top: 25px;
+  font-size: 19px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.two ul li.red {
+  background-color: hsl(0, 100%, 97%);
+}
+.two ul li.red .word {
+  color: #ff5555;
+}
+.two ul li.orange {
+  background-color: hsl(39, 100%, 96%);
+}
+.two ul li.orange .word {
+  color: #ffb21e;
+}
+.two ul li.green {
+  background-color: hsl(166, 100%, 97%);
+}
+.two ul li.green .word {
+  color: #00bb8f;
+}
+.two ul li.blue {
+  background-color: hsl(234, 85%, 97%);
+}
+.two ul li.blue .word {
+  color: #162ad7;
+}
+.two ul li .word {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.two ul li .num {
+  color: hsl(224, 30%, 27%);
+  font-weight: bold;
+}
+.two ul li .num span {
+  color: #aaaaaa;
+}
+.two ul li .word img {
+  margin-right: 10px;
+}
+.two .button {
+  margin: 40px auto 0;
+  text-align: center;
+  font-size: 19px;
+  color: white;
+  background: hsl(224, 30%, 27%);
+  border-radius: 30px;
+  padding: 18px;
+  width: 100%;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.two .button:hover {
+  background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+}
+@media (max-width: 767px) {
+  .content {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 25px;
+    box-shadow: none;
+    flex-direction: column;
+  }
+  .one {
+    width: 100%;
+    height: 50%;
+    border-radius: 0 0 25px 25px;
+  }
+  .two {
+    width: 100%;
+    height: 50%;
+    padding: 40px;
+  }
+  .one .circle {
+    padding: 50px;
+
+    width: 180px;
+    height: 180px;
+  }
+  .one .circle .txt p {
+    color: white;
+    font-size: 55px;
+    font-weight: bold;
+    margin: 0 0 6px;
+  }
+  .one > p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(241, 100%, 89%);
+    font-size: 25px;
+    font-weight: bold;
+    margin: -15px 25px 25px;
+  }
+  .two ul li {
+    margin-top: 18px;
+    font-size: 18px;
+  }
+  .one .text h3 {
+    color: white;
+    font-size: 35px;
+    margin: 20px 0 20px;
+  }
+  .one .text p {
+    font-size: 18px;
+    margin-top: -5px;
+  }
+  .two .button {
+    margin: 30px auto 0;
+  }
+  .two h3 {
+    margin: -23px 0 22px;
+  }
+}
